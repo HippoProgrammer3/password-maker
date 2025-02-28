@@ -1,0 +1,1 @@
+pythonhash@ git+https://github.com/HippoProgrammer3/python-hash#egg=main
