@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/passwordmaker/__main__.py
+src/passwordmaker.egg-info/PKG-INFO
+src/passwordmaker.egg-info/SOURCES.txt
+src/passwordmaker.egg-info/dependency_links.txt
+src/passwordmaker.egg-info/requires.txt
+src/passwordmaker.egg-info/top_level.txt

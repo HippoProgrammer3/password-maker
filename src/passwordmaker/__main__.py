@@ -2,6 +2,8 @@ from pythonhash import php256
 
 import csv, getpass
 
+import os
+
 # Define custom error classes
 
 class CSVReadError(Exception):
@@ -16,6 +18,12 @@ timeoutDict = []
 # Define a dictionary to hold the hash data
 
 hashDict = dict()
+
+# Before reading csv, check it exists
+if not os.path.exists('hash.csv'):
+    # and if not, create it
+    with open('hash.csv','w',newline='') as csvfile:
+        csvfile.write('')
 
 with open('hash.csv','r',newline='') as csvfile:
     hashReader = csv.reader(csvfile)
@@ -96,10 +104,10 @@ while True:
         print('Not a valid option - try again!')
 
 # Flush the updated password csv to disk
-
+print('Flushing updated passwords to disk...')
 with open('hash.csv','w',newline='') as csvfile:
     hashWriter = csv.writer(csvfile)
-    for hashPair in hashDict:
+    for hashPair in hashDict.items():
         hashWriter.writerow(hashPair)
 
 # Print an exit message

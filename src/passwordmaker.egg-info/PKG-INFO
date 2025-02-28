@@ -1,0 +1,17 @@
+Metadata-Version: 2.2
+Name: passwordmaker
+Version: 0.0.1
+Summary: A terrible password library
+Author-email: Benjamin Porter <bcgcustomerservices@gmail.com>
+Project-URL: Homepage, https://github.com/HippoProgrammer3/python-hash
+Project-URL: Issues, https://github.com/HippoProgrammer3/python-hash/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pythonhash@ git+https://github.com/HippoProgrammer3/python-hash#egg=main
+
+# password-maker
+A very bad password authenticator library built on python-hash
