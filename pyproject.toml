@@ -16,7 +16,11 @@ classifiers = [
     "Operating System :: OS Independent",
     "License :: OSI Approved :: MIT License",
 ]
+dependencies = [
+  "pythonhash@git+https://github.com/HippoProgrammer3/python-hash#egg=main"
+]
 
 [project.urls]
 Homepage = "https://github.com/HippoProgrammer3/python-hash"
 Issues = "https://github.com/HippoProgrammer3/python-hash/issues"
+
